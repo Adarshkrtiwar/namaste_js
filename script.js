@@ -161,3 +161,44 @@ const sumofArr= arr.reduce(function (acc , current){
 } ,0);
 
 console.log(sumofArr);
+
+
+const user  = fetch('https://api.github.com/users/alok722');
+
+console.log(user);
+// user.then(res=>console.log(res));
+const [a,xy,...c] = [1,2,3,];
+console.log(a);
+const obj = {
+    1:'mumbai',
+    2:'pune'
+}
+const obj1 = obj;
+obj1[1] = 'Delhi';
+
+// console.log(obj[1]);
+// console.log(obj1[1]);
+
+const arry = [1,2,3,3];
+const array=arry;
+array[2]=43;
+const bary = [...arry];
+bary[2]=34;
+// console.log(...array);
+// console.log(bary)
+// console.log(arry);
+
+
+
+const str = 'Adarsh';
+const revStr = str.toLocaleLowerCase().split('').reverse().join('');
+
+// console.log(revStr);
+
+
+
+
+
+
+
+
