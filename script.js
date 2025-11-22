@@ -65,46 +65,46 @@
 // console.log("end")
 
 
-function x(){
-    console.log('Hi');
-}
+// function x(){
+//     console.log('Hi');
+// }
 
-function y(x){
-    x();
-}
-y(x);
-
-
-const radius = [1,2,3,4,5];
-const output=[];
-const calculateArea = function(radius){
-    for(let i = 0 ; i < radius.length ; i++){
-  output.push(Math.PI * radius[i] * radius[i]);
-    }
-    return output;
-};
-
-console.log(calculateArea(radius));
-
-function calculateCircumference(){
-    const out=[];
-    for(let i = 0 ; i < radius.length ; i++){
-        out.push( 2 * Math.PI * radius[i]);
-    }
-    return out;
-}
-
-console.log(calculateCircumference(radius));
+// function y(x){
+//     x();
+// }
+// y(x);
 
 
-//Polyfill of map function in array 
-Array.prototype.calculate = function (ops){
-    const out1=[];
-    for(let i = 0 ; i<this.length ; i++){
-        out1.push(ops(this[i]));
-    }
-    return out1;
-}
+// const radius = [1,2,3,4,5];
+// const output=[];
+// const calculateArea = function(radius){
+//     for(let i = 0 ; i < radius.length ; i++){
+//   output.push(Math.PI * radius[i] * radius[i]);
+//     }
+//     return output;
+// };
+
+// console.log(calculateArea(radius));
+
+// function calculateCircumference(){
+//     const out=[];
+//     for(let i = 0 ; i < radius.length ; i++){
+//         out.push( 2 * Math.PI * radius[i]);
+//     }
+//     return out;
+// }
+
+// console.log(calculateCircumference(radius));
+
+
+// //Polyfill of map function in array 
+// Array.prototype.calculate = function (ops){
+//     const out1=[];
+//     for(let i = 0 ; i<this.length ; i++){
+//         out1.push(ops(this[i]));
+//     }
+//     return out1;
+// }
 
 
 // Map , filter , and reduce method on array 
@@ -141,64 +141,77 @@ Array.prototype.calculate = function (ops){
 // Reduce function 
 
 
-const arr = [1,2,3,4,3];
-function findSum (arr){
-    let sum = 0 ; 
-    for(let i = 0 ; i<arr.length ; i++){
-        sum += arr[i];
-    }
-    return sum ;
+// const arr = [1,2,3,4,3];
+// function findSum (arr){
+//     let sum = 0 ; 
+//     for(let i = 0 ; i<arr.length ; i++){
+//         sum += arr[i];
+//     }
+//     return sum ;
 
-}
+// }
 
-const b = findSum(arr);
-console.log(b);
-
-
-const sumofArr= arr.reduce(function (acc , current){
-    acc= acc+ current
-    return acc;
-} ,0);
-
-console.log(sumofArr);
+// const b = findSum(arr);
+// console.log(b);
 
 
-const user  = fetch('https://api.github.com/users/alok722');
+// const sumofArr= arr.reduce(function (acc , current){
+//     acc= acc+ current
+//     return acc;
+// } ,0);
 
-console.log(user);
-// user.then(res=>console.log(res));
-const [a,xy,...c] = [1,2,3,];
-console.log(a);
-const obj = {
-    1:'mumbai',
-    2:'pune'
-}
-const obj1 = obj;
-obj1[1] = 'Delhi';
-
-// console.log(obj[1]);
-// console.log(obj1[1]);
-
-const arry = [1,2,3,3];
-const array=arry;
-array[2]=43;
-const bary = [...arry];
-bary[2]=34;
-// console.log(...array);
-// console.log(bary)
-// console.log(arry);
+// console.log(sumofArr);
 
 
+// const user  = fetch('https://api.github.com/users/alok722');
 
-const str = 'Adarsh';
-const revStr = str.toLocaleLowerCase().split('').reverse().join('');
+// console.log(user);
+// // user.then(res=>console.log(res));
+// const [a,xy,...c] = [1,2,3,];
+// console.log(a);
+// const obj = {
+//     1:'mumbai',
+//     2:'pune'
+// }
+// const obj1 = obj;
+// obj1[1] = 'Delhi';
 
-// console.log(revStr);
+// // console.log(obj[1]);
+// // console.log(obj1[1]);
+
+// const arry = [1,2,3,3];
+// const array=arry;
+// array[2]=43;
+// const bary = [...arry];
+// bary[2]=34;
+// // console.log(...array);
+// // console.log(bary)
+// // console.log(arry);
 
 
 
+// const str = 'Adarsh';
+// const revStr = str.toLocaleLowerCase().split('').reverse().join('');
+
+// // console.log(revStr);
+
+
+
+// const aaa= [1,2,3];
+// const bbb=[...aaa,4,5];
+// console.log(bbb)
 
 
 
 
+//Datatypes in js 
+let bool = true;
+let a = 23; 
+let str = "Adrsh"
+let n = null;
+let u = undefined
 
+console.log(n==u);
+console.log(u);
+let obj = {};
+console.log(obj.no);
