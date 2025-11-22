@@ -126,7 +126,7 @@
 
 // Filter function 
 
-//arr.filter()
+// arr.filter()
 
 // const arr = [1,2,3,2,3,1,2];
 // const fil= arr.filter(isOdd);
@@ -204,14 +204,62 @@
 
 
 
-//Datatypes in js 
-let bool = true;
-let a = 23; 
-let str = "Adrsh"
-let n = null;
-let u = undefined
+// Datatypes in js 
+// let bool = true;
+// let a = 23; 
+// let str = "Adrsh"
+// let n = null;
+// let u = undefined
 
-console.log(n==u);
-console.log(u);
-let obj = {};
-console.log(obj.no);
+// console.log(n==u);
+// console.log(u);
+// let obj = {};
+// console.log(obj.no);
+
+// obj.a=null;
+
+
+
+
+// Task A: 
+// String Compression: Implement a method to perform basic string compression using the counts of repeated characters. 
+// For example, the string aabcccccaaa would become a2b1c5a3.
+// If the "compressed" string would not become smaller than the original string, your method should return the original string.
+// You can assume the string has only uppercase and lowercase letters (a - z).
+
+// “” → “”
+// "a" → "a"
+// "aa" → "aa" (equal length → return original)
+// "aaa" → "a3"
+// "abc" → "abc" (no repeats)
+// "aabcccccaaa" → "a2b1c5a3"
+
+
+
+
+let str = "aaabcccccdddaaa";
+
+function stringCompress(str){
+    let newstr = ""
+    let count = 1;
+if(!str){
+    return "";
+}
+
+
+    for(let i = 1 ; i<=str.length ; i++){
+                if(str[i] == str[i-1]){
+                 count++;
+                }
+                else {
+                    newstr += str[i-1] + count ;
+                    count = 1;
+                }
+    }
+
+
+    return newstr;
+}
+
+
+console.log(stringCompress(str));
